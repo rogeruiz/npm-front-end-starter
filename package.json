@@ -1,0 +1,19 @@
+{
+  "name": "npm-front-end-starter",
+  "version": "1.0.0",
+  "description": "Use `npm` to start a front-end project. This repository is generally useful to test your `npm` package for use with a front-end workflow that uses `npm`.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "cat assets/style.scss | node-sass --output-style compressed > dist.css",
+    "build-js": "browserify assets/start.js > dist.js",
+    "build": "npm run build-css && npm run build-js"
+  },
+  "keywords": [],
+  "author": "Roger Steve Ruiz <hi@rog.gr>",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "node-sass": "^3.4.2"
+  }
+}
